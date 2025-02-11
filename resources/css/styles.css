@@ -6,13 +6,14 @@
     font-style: normal;
   }
 
-  // <uniquifier>: Use a unique and descriptive class name
+  /* <uniquifier>: Use a unique and descriptive class name
   // <weight>: Use a value from 300 to 700
+  this text came with the google fonts. Just keeping it incase needed.*/
   
-  .quicksand-<uniquifier> {
+  .quicksand /*-<uniquifier>*/ {
     font-family: "Quicksand", serif;
     font-optical-sizing: auto;
-    font-weight: <weight>;
+    font-weight: 400 /*<weight> original text that came with the google fonts*/;
     font-style: normal;
   }
 
@@ -35,7 +36,7 @@ html {
 
 body {
     background-color: #ffffff;
-    /* waiting to see if this is necessary: width: 90%;*/
+    width: 90%;
 }
 
 a {
@@ -340,4 +341,3 @@ footer .favicon_logo {
     }
 
 }
-
