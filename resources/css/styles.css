@@ -288,9 +288,9 @@ footer .favicon_logo {
 
 /*Media Queries*/
 @media only screen and (max-width: /*800*/950px) {
-    /*html {
+    html {
         font-size: 14px;
-    }*/
+    }
 
     nav {
         display: flex;
@@ -326,9 +326,9 @@ footer .favicon_logo {
 }
 
 @media only screen and (max-width: 800px) {
-    /*html {
+    html {
         font-size: 12px;
-    }*/
+    }
 
     #welcome {
         justify-content: space-around;
