@@ -1,52 +1,3 @@
-  /*Universal*/
-
-* {
-    margin: 0 auto;
-}
-
-html {
-    font-size: 20px;
-    font-family: "Quicksand", serif;
-}
-
-body {
-    background-color: #ffffff;
-}
-
-a {
-    text-decoration: none;
-    color:#ffffff;
-}
-
-a:hover {
-    color: #636262;
-}
-
-h1,
-h2 {
-    font-family: "Special Elite", serif;
-    letter-spacing: 0.1rem;
-    font-size: 1.5rem;
-    margin: 1rem;
-}
-
-h3 {
-    
-}
-
-p {
-    font-family: "Quicksand", serif;
-    letter-spacing: 0.1rem;
-    line-height: 1.5rem;
-    font-weight: 600;
-    font-size: 1rem;
-}
-
-ul {
-    list-style-type: none;
-    display: inline-flex;
-}
-
 /*fonts*/
 
 .special-elite-regular {
@@ -54,15 +5,11 @@ ul {
     font-weight: 400;
     font-style: normal;
   }
-
-  /* <uniquifier>: Use a unique and descriptive class name
-  // <weight>: Use a value from 300 to 700
-  this text came with the google fonts. Just keeping it incase needed.*/
   
-  .quicksand /*-<uniquifier>*/ {
+  .quicksand {
     font-family: "Quicksand", serif;
     font-optical-sizing: auto;
-    font-weight: 400 /*<weight> original text that came with the google fonts*/;
+    font-weight: 400;
     font-style: normal;
   }
 
@@ -72,279 +19,232 @@ ul {
     font-style: normal;
   }
 
-/*main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;/*
+/*Universal*/
+html {
+  font-size: 18px;
 }
 
-/*navigation */
-nav {
-    background-color: #ffcd29;
-    padding: 1rem;
+body {
+    margin: 0 auto;
     text-align: center;
-    display: flex;
-    justify-content: space-around;
-    margin: 0;
+    font-family: "Quicksand", serif;
 }
 
-nav img {
-    width: 10rem;
-    height: 10rem;
-    margin: 0;
+ul {
+  list-style-type: none;
+  display: flex;
 }
 
-#navlist {
-    margin: 1rem 0 0.5rem 0;
-    align-items: center;
-    white-space: nowrap;
+ul li {
+  padding: 0 1rem;
+  font-family: "Special Elite", serif;
+  letter-spacing: 0.05rem;
 }
 
-#navlist h3 a {
-    color:#ffffff;
-    padding: 15px;
-    margin: 0;
-    font-family: "Special Elite", serif;
-    font-size: 1.2rem;
-    flex-wrap: no-wrap;
+a {
+  color: 	#1A63BD;
+  text-decoration: none;
+  font-weight: 800;
 }
 
-#navlist h3 a:hover {
-    color: #636262;
+
+/*Navigation*/
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  background-color: #ffcc23;
 }
 
-li {
-    margin-right: 3rem;
+nav #navlist {
+  align-self: flex-end;
 }
 
-#logo {
-    margin-left: 1rem;
+nav #logo {
+  width: 25%;
 }
 
-#logo img {
-    height: 5rem;
-    width: auto;
+nav #logo img {
+  width: 100%;
 }
 
 /*Welcome*/
 #welcome {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 2rem;
 }
 
-.greeting {
-    margin: 1rem 2rem;
-    flex-basis: 25%;
-    flex-grow: 1;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+#welcome .greeting {
+  padding: 0 3rem;
+  width: 30%;
 }
 
-.greeting h2 {
-    justify-content: center;
-    margin: 0;
+#welcome .pupper {
+  width: 80%;
 }
 
-.pupper {
-    margin: 1rem;
-    flex-basis: 70%;
-    flex-grow: 3;
-}
-
-.pupper img {
-    width: 100%;
+#welcome .pupper img {
+  width: 100%;
 }
 
 /*Products*/
 #products {
-    /*width: 100%;*/
-    background-color: #ffcd29;
-    padding: 3rem 1rem;
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    flex-basis: fit-content;
+  background-color: #ffcc23;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem 2rem 2rem;
 }
 
-.letsee {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 400px;
-    margin: 1rem;
+#products .letsee {
+  width: 28%;
 }
 
-.letsee h2 {
-    justify-content: center;
-    width: 100%;
-    margin: 0;
-    align-items: center;
+#products .letsee img {
+  width: 100%;
 }
 
-.letsee img {
-    width: 100%;
-    height: auto;
-}
-
-/*Affiliates*/
+/*Affiliate*/
 #affil {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-basis: fit-content;
-    padding: 1rem;
-    /*width: 100%;*/
-}
-
-#affil .affil_logos {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 1rem;
-    margin: 2rem;
-}
-
-#affil .affil_logos img {
-    width: 15rem;
-    height: 15rem;
-    margin: 1rem;
-}
-
-#affil .affil_logos #round {
-    border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem 2rem 2rem;
 }
 
 #affil .affil_who {
-    margin: 0;
-    text-align: center;
-    justify-content: center;
-    max-width: 80%;
+  padding: 1rem;
+  flex-basis: 80%;
+}
+
+#affil .affil_logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 1rem;
+}
+
+#affil .affil_logos img {
+  width: 10rem;
+}
+
+#round {
+  border-radius: 50%;
 }
 
 /*About*/
 #about {
-    /*width: 100%;*/
-    background-color: #ffcd29;
-    padding: 1rem;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: space-around;
-}
-
-#about h2 {
-    font-size: 1.5rem;
-}
-
-#hrs {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 0.5rem;
-}
-
-#addr {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
+  background-color: #ffcc23;
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 /*Map*/
 #map {
-    /*width: 100%;*/
-    overflow: hidden;
-    padding: 1rem;
-    display: flex;
-    justify-content: center;
+  overflow: scroll;
+  justify-content: center;
+}
+
+#map img {
+  width: auto;
+  min-height: 20rem;
 }
 
 /*Footer*/
 footer {
-    /*width: 100%;*/
-    height: auto;
-    background-color: #ffcd29;
-    padding: 1rem;
-    margin: 0;
+  background-color: #ffcc23;
+  padding: 1rem;
 }
 
-footer .socials {
+.socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+/*Media*/
+@media only screen and (max-width: 900px) {
+  #welcome {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  #welcome .greeting {
+    padding: 1rem 0;
+    width: 80%;
+  }
+
 }
 
-footer .fbinsta {
-    justify-content: space-around;
+@media only screen and (max-width: 700px) {
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+  }
+
+  nav #logo {
+    justify-self: center;
+    width: 8rem;
+  }
+
+  nav #navlist {
+    align-self: center;
+  }
+
+  #products {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #products .letsee {
+    width: 80%;
+  }
+
+  #affil {
+    display: flex;
+    justify-content: center;
+  }
+
+  #affil .affil_logos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .affil_logos img {
+    padding: 1rem;
+  }
+
+  #about {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  
 }
 
-footer .favicon_logo {
-    width: 25%;
-}
+@media only screen and (max-width: 500px) {
+  html {
+    font-size: 14px;
+  }
 
-/*Media Queries*/
-@media only screen and (max-width: /*800*/950px) {
-    html {
-        font-size: 14px;
-    }
-
-    nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        /*width: 100%;*/
-    }
-
-    nav #logo {
-      /*width: 100%;*/
-      margin: 0;
-      justify-self: center;
-    }
-
-    nav #logo img {
-        width: 5rem;
-        height: 5rem;
-        margin: 0;
-        justify-self: center;
-    }
-
-    nav #navlist h3 {
-        font-size: 1rem;
-    }
-
-    #about {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-}
-
-@media only screen and (max-width: 800px) {
-    html {
-        font-size: 12px;
-    }
-
-    #welcome {
-        justify-content: space-around;
-        /*width: 100%;*/
-        display: flex;
-        flex-direction: column;
-    }
-
-   #welcome {
-        background-image: none;
-        max-width: fit-content;
-        /*width: 100%;*/
-        height: auto;
-        padding: 1rem;
-        text-align: center;
-        margin: 0;
-    }
-
+  nav #logo {
+    justify-self: center;
+    width: 4rem;
+  }
+  
 }
